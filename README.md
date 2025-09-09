@@ -1,4 +1,4 @@
-#MetaTreasure
+# MetaTreasure
 
 Мобильное приложение позволяющее закупать крипто токены.
 
@@ -15,3 +15,4 @@ OC: Android
 [User Interface Images]()
 
 [Tests]()
+

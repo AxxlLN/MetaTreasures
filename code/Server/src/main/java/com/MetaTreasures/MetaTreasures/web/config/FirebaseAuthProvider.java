@@ -1,4 +1,4 @@
-package com.MetaTreasures.MetaTreasures.core.security;
+package com.MetaTreasures.MetaTreasures.web.config;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;

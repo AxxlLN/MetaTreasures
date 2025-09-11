@@ -1,21 +1,20 @@
 package com.MetaTreasures.MetaTreasures.web.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
+import java.util.List;
 
 @Getter
 @Setter
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class UserDto {
     private Long userId;
     private String firebaseUid;
     private String email;
-    private LocalDateTime createdAt;
-    private boolean verified;
-
+    private Instant createdAt;
+    private Boolean verified;
+    private List<BalanceDto> balances;
 }

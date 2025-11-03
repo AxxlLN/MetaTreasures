@@ -1,6 +1,7 @@
 package com.MetaTreasures.MetaTreasures.core.service;
 
 import com.MetaTreasures.MetaTreasures.core.api.ExternalNewsApiClient;
+import com.MetaTreasures.MetaTreasures.core.exeptions.serveciexeptions.NewsNotFoundExeption;
 import com.MetaTreasures.MetaTreasures.core.model.News;
 import com.MetaTreasures.MetaTreasures.core.repositories.NewsRepository;
 import com.MetaTreasures.MetaTreasures.web.dto.NewsDto;
@@ -10,6 +11,8 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -21,10 +24,15 @@ public class NewsService {
 
     private final NewsRepository newsRepository;
     private final ExternalNewsApiClient apiClient;
+    private PlatformTransactionManager transactionManager;
 
     @PostConstruct
     public void loadInitialNews() {
-        fetchAndSaveLatestNews();
+        TransactionTemplate template = new TransactionTemplate(transactionManager);
+        template.execute(status -> {
+            fetchAndSaveLatestNews();
+            return null;
+        });
     }
 
     @Scheduled(fixedRate = 10 * 60 * 1000)
@@ -60,11 +68,11 @@ public class NewsService {
         }
     }
 
-    public List<News> getLatestNews() {
+    public List<News> getLatestNews() throws NewsNotFoundExeption {
         return newsRepository.findTop20ByOrderByPublishedAtDesc();
     }
 
-    public List<NewsSummaryDto> getLatestNewsSummary() {
+    public List<NewsSummaryDto> getLatestNewsSummary() throws NewsNotFoundExeption{
         return getLatestNews().stream()
                 .map(news -> new NewsSummaryDto(
                         news.getTitle(),

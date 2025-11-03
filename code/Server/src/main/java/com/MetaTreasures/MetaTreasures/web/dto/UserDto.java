@@ -1,5 +1,6 @@
 package com.MetaTreasures.MetaTreasures.web.dto;
 
+import com.MetaTreasures.MetaTreasures.core.model.User;
 import lombok.*;
 
 import java.time.Instant;

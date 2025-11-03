@@ -1,7 +1,5 @@
 package com.MetaTreasures.MetaTreasures.web.dto;
 
-import com.MetaTreasures.MetaTreasures.core.model.Token;
-import com.MetaTreasures.MetaTreasures.core.model.User;
 import lombok.*;
 
 @Getter
@@ -11,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 public class BalanceDto {
     private Long balanceId;
-    private User userId;
-    private Token tokenId;
+    private Long userId;
+    private Long tokenId;
     private String amount;
 }

@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">MetaTreasures</string>
+    <string name="app_name">Calibri</string>
+    <string name="novice_title">Я новичок в криптовалюте</string>
+    <string name="novice_description">Я слышал о Биткоине и собираюсь торговать другими популярными монетами.</string>
+    <string name="experienced_title">Я знаком с криптовалютой</string>
+    <string name="experienced_description">У меня есть опыт спотовой и фьючерсной торговли и я рассматриваю другие способы увеличения капитала.</string>
+    <string name="top_section_part1">Расскажите о</string>
+    <string name="top_section_part2">себе!</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="divider_or">или</string>
+    <string name="email_input_label">Введите электронную почту</string>
+    <string name="email_input_placeholder">Электронная почта</string>
+    <string name="google_button">Продолжить с Google</string>
+    <string name="sign_up_text">Зарегистрируйте аккаунт</string>
+    <string name="terms_checkbox_text">Создавая учетную запись, я соглашаюсь с</string>
+    <string name="terms_checkbox_link">Условиями использования и Политикой конфиденциальности</string>
+    <string name="terms_sheet_text">Приложение является курсовым проектом</string>
+    <string name="welcome_header_line1">Добро пожаловать в</string>
+    <string name="welcome_header_line2">Calibri!</string>
 </resources>

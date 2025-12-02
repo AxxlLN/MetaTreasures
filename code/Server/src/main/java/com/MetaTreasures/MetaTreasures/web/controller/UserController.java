@@ -5,10 +5,11 @@ import com.MetaTreasures.MetaTreasures.core.model.User;
 import com.MetaTreasures.MetaTreasures.core.service.UserService;
 import com.MetaTreasures.MetaTreasures.web.dto.UserDto;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
+@Slf4j
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
@@ -22,7 +23,9 @@ public class UserController {
      */
     @PostMapping("/auth")
     public ResponseEntity<UserDto> authenticateUser(@RequestHeader("Authorization") String idToken) {
+        log.info("token", idToken);
         if (idToken.startsWith("Bearer ")) idToken = idToken.substring(7);
+        log.info("token", idToken);
         User user = userService.getOrCreateUser(idToken);
         return ResponseEntity.ok(userMapping.mapToDto(user));
     }

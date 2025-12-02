@@ -1,22 +1,22 @@
-2025-11-04T00:00:49.377+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Starting MetaTreasuresApplication using Java 22.0.1 with PID 4648 (E:\programms\MetaTreasures\code\Server\target\classes started by AxlLN in E:\programms\MetaTreasures\code\Server)
-2025-11-04T00:00:49.384+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-11-04T00:00:49.439+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-04T00:00:49.439+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-04T00:00:50.288+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-04T00:00:50.348+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
-2025-11-04T00:00:51.079+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-04T00:00:51.099+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-04T00:00:51.099+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-11-04T00:00:51.215+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-04T00:00:51.215+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1775 ms
-2025-11-04T00:00:51.418+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-04T00:00:51.468+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-11-04T00:00:51.504+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-11-04T00:00:51.767+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-04T00:00:51.797+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-04T00:00:51.965+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24a6d078
-2025-11-04T00:00:51.966+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-04T00:00:52.031+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-12-02T03:24:32.841+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Starting MetaTreasuresApplication using Java 22.0.1 with PID 9972 (E:\programms\MetaTreasures\code\Server\target\classes started by AxlLN in E:\programms\MetaTreasures\code\Server)
+2025-12-02T03:24:32.849+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-12-02T03:24:32.918+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-02T03:24:32.919+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-02T03:24:34.574+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T03:24:34.645+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+2025-12-02T03:24:35.498+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-02T03:24:35.521+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T03:24:35.522+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-12-02T03:24:35.589+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T03:24:35.590+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2670 ms
+2025-12-02T03:24:35.847+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T03:24:35.938+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-12-02T03:24:35.990+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T03:24:36.378+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T03:24:36.424+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T03:24:36.867+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37d088a1
+2025-12-02T03:24:36.869+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-02T03:24:36.949+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.3
@@ -24,25 +24,97 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-04T00:00:52.831+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-04T00:00:53.044+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-04T00:00:53.064+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.lang.String com.MetaTreasures.MetaTreasures.core.api.TokenApiParser.API_URL
-2025-11-04T00:00:53.309+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-11-04T00:00:55.744+03:00 ERROR 4648 --- [MetaTreasures] [restartedMain] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
-2025-11-04T00:00:55.744+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] c.M.M.core.service.TokenService          : Ok
-2025-11-04T00:00:55.941+03:00  WARN 4648 --- [MetaTreasures] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-04T00:00:55.986+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2025-11-04T00:00:56.439+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-11-04T00:00:56.478+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-11-04T00:00:56.507+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-04T00:00:56.518+03:00  INFO 4648 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Started MetaTreasuresApplication in 7.664 seconds (process running for 8.183)
-2025-11-04T00:00:56.839+03:00 ERROR 4648 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
-2025-11-04T00:00:56.840+03:00  INFO 4648 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
-2025-11-04T00:01:05.355+03:00  INFO 4648 --- [MetaTreasures] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-04T00:01:05.356+03:00  INFO 4648 --- [MetaTreasures] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-04T00:01:05.356+03:00  INFO 4648 --- [MetaTreasures] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-11-04T00:01:36.834+03:00  INFO 4648 --- [MetaTreasures] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-04T00:01:36.838+03:00  INFO 4648 --- [MetaTreasures] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-04T00:01:36.841+03:00  INFO 4648 --- [MetaTreasures] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-04T00:01:36.845+03:00  INFO 4648 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-04T00:01:36.850+03:00  INFO 4648 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-02T03:24:37.922+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T03:24:38.188+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T03:24:38.216+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.lang.String com.MetaTreasures.MetaTreasures.core.api.TokenApiParser.API_URL
+2025-12-02T03:24:38.615+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-02T03:24:42.249+03:00 ERROR 9972 --- [MetaTreasures] [restartedMain] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T03:24:42.249+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] c.M.M.core.service.TokenService          : Ok
+2025-12-02T03:24:42.886+03:00  WARN 9972 --- [MetaTreasures] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-02T03:24:42.994+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-02T03:24:44.153+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-12-02T03:24:44.198+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-02T03:24:44.236+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-02T03:24:44.251+03:00  INFO 9972 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Started MetaTreasuresApplication in 12.045 seconds (process running for 14.134)
+2025-12-02T03:24:44.755+03:00 ERROR 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T03:24:44.755+03:00  INFO 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
+2025-12-02T03:24:48.775+03:00  INFO 9972 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-02T03:24:48.775+03:00  INFO 9972 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-02T03:24:48.777+03:00  INFO 9972 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-02T03:24:48.818+03:00  INFO 9972 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-2] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T03:54:45.750+03:00 ERROR 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T03:54:45.751+03:00  INFO 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
+2025-12-02T04:24:45.489+03:00 ERROR 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T04:24:45.489+03:00  INFO 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
+2025-12-02T04:50:57.963+03:00  INFO 9972 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-5] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T04:54:45.224+03:00 ERROR 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T04:54:45.225+03:00  INFO 9972 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
+2025-12-02T05:14:44.652+03:00  INFO 9972 --- [MetaTreasures] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-02T05:14:44.672+03:00  INFO 9972 --- [MetaTreasures] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-02T05:14:45.596+03:00  INFO 9972 --- [MetaTreasures] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T05:14:45.641+03:00  INFO 9972 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-02T05:14:45.655+03:00  INFO 9972 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-02T06:47:02.657+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Starting MetaTreasuresApplication using Java 22.0.1 with PID 4924 (E:\programms\MetaTreasures\code\Server\target\classes started by AxlLN in E:\programms\MetaTreasures\code\Server)
+2025-12-02T06:47:02.660+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-12-02T06:47:02.735+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-02T06:47:02.736+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-02T06:47:04.280+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-02T06:47:04.362+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+2025-12-02T06:47:05.250+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-02T06:47:05.275+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-02T06:47:05.275+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-12-02T06:47:05.381+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-02T06:47:05.381+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2644 ms
+2025-12-02T06:47:05.740+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-02T06:47:05.817+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-12-02T06:47:05.855+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-02T06:47:06.171+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-02T06:47:06.208+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-02T06:47:06.477+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@224876d4
+2025-12-02T06:47:06.479+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-02T06:47:06.559+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-02T06:47:07.672+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-02T06:47:07.970+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T06:47:07.999+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static java.lang.String com.MetaTreasures.MetaTreasures.core.api.TokenApiParser.API_URL
+2025-12-02T06:47:08.426+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-02T06:47:11.861+03:00 ERROR 4924 --- [MetaTreasures] [restartedMain] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T06:47:11.861+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] c.M.M.core.service.TokenService          : Ok
+2025-12-02T06:47:12.256+03:00  WARN 4924 --- [MetaTreasures] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-02T06:47:12.320+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-02T06:47:12.962+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-12-02T06:47:13.001+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-02T06:47:13.046+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-02T06:47:13.063+03:00  INFO 4924 --- [MetaTreasures] [restartedMain] c.M.M.MetaTreasuresApplication           : Started MetaTreasuresApplication in 11.016 seconds (process running for 22.317)
+2025-12-02T06:47:13.429+03:00 ERROR 4924 --- [MetaTreasures] [scheduling-1] c.M.M.core.api.TokenApiParser            : Failed URI is not absolute
+2025-12-02T06:47:13.430+03:00  INFO 4924 --- [MetaTreasures] [scheduling-1] c.M.M.core.service.TokenService          : Ok
+2025-12-02T06:47:34.223+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-02T06:47:34.223+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-02T06:47:34.225+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-02T06:47:34.259+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T06:51:06.462+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-3] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T06:54:04.197+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-5] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T06:54:04.640+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-6] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T06:57:01.248+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-9] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T06:58:54.782+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:00:22.261+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-3] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:02:02.807+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-6] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:04:59.705+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-8] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:05:09.531+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-9] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:07:32.522+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-1] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:08:59.748+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-4] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:09:05.157+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-3] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:11:57.742+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-6] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:12:29.602+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-8] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:13:16.449+03:00  INFO 4924 --- [MetaTreasures] [http-nio-0.0.0.0-8080-exec-10] c.M.M.web.controller.TokenController     : Запрос
+2025-12-02T07:14:54.821+03:00  INFO 4924 --- [MetaTreasures] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-02T07:14:54.841+03:00  INFO 4924 --- [MetaTreasures] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-02T07:14:54.873+03:00  INFO 4924 --- [MetaTreasures] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-02T07:14:54.947+03:00  INFO 4924 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-02T07:14:54.979+03:00  INFO 4924 --- [MetaTreasures] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

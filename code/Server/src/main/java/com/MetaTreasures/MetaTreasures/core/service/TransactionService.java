@@ -18,21 +18,18 @@ public class TransactionService {
     private final TransactionRepository transactionRepository;
     private final TransactionMapping transactionMapper;
 
-    // Получаем все транзакции пользователя
     public List<TransactionsDto> getUserTransactions(Long userId) {
         return transactionRepository.findByUserIdOrderByCreatedAtDesc(userId).stream()
                 .map(transactionMapper::toDto)
                 .collect(Collectors.toList());
     }
 
-    // Добавляем транзакцию
     public TransactionsDto addTransaction(Transaction tx) {
         tx.setCreatedAt(Instant.now());
         Transaction saved = transactionRepository.save(tx);
         return transactionMapper.toDto(saved);
     }
 
-    // Поиск транзакций пользователя по токену
     public List<TransactionsDto> searchUserTransactions(Long userId, String tokenNameOrSymbol) {
         return transactionRepository.searchByUserIdAndToken(userId, tokenNameOrSymbol).stream()
                 .map(transactionMapper::toDto)

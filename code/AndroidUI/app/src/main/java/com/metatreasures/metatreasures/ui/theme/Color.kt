@@ -19,18 +19,13 @@ val Teal200 = Color(0xFF03DAC5)
 val White = Color(0xFFFFFFFF)
 val Black = Color(0xFF000000)
 
-val VeryLightShadeOfRed = Color(0xFFE9E6E6)         // light background form
-val MediumLightShadeOfBlue = Color(0xFF3D5CFF)     // light button
-val ShadeOfBlueBlue = Color(0xFF0094FF)            // startBackgroundScreen
-val VeryDarkShadeOfPurplishBlue = Color(0xFF1F1F39) // dark background main
-val DarkShadeOfPurpleBlue = Color(0xFF2f2f42)       // dark background form
-val MediumDarkShadeOfPurpleBlue = Color(0xFF3E3E55) // dark text field
-val MediumDarkShadeOfBlueBlue = Color(0xFF0065ae)   // dark pressed button
+val VeryLightShadeOfRed = Color(0xFFE9E6E6)
+val MediumLightShadeOfBlue = Color(0xFF3D5CFF)
+val ShadeOfBlueBlue = Color(0xFF0094FF)
+val VeryDarkShadeOfPurplishBlue = Color(0xFF1F1F39)
+val DarkShadeOfPurpleBlue = Color(0xFF2f2f42)
+val MediumDarkShadeOfPurpleBlue = Color(0xFF3E3E55)
+val MediumDarkShadeOfBlueBlue = Color(0xFF0065ae)
 
-val Red = Color(0xFFFF0000)
-val Cyan = Color(0xFF00BFFF)
-
-val MediumDarkShadeOfBlue = Color(0xFF2a3b94)
-val MediumDarkShadeOfRed = Color(0xFF960000)
 
 

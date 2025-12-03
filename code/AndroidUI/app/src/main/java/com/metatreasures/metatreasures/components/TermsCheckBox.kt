@@ -10,20 +10,33 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import com.metatreasures.metatreasures.R
 
 @Composable
-fun TermsCheckbox(agreed: Boolean, onCheckedChange: (Boolean) -> Unit, onClickTerms: () -> Unit) {
-    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
-        Checkbox(checked = agreed, onCheckedChange = onCheckedChange)
+fun TermsCheckbox(
+    agreed: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+    onClickTerms: () -> Unit
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Checkbox(
+            checked = agreed,
+            onCheckedChange = onCheckedChange
+        )
         Column {
-            Text(text = stringResource(R.string.terms_checkbox_text), style = MaterialTheme.typography.bodySmall)
+            Text(
+                text = stringResource(R.string.terms_checkbox_text),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurface
+            )
             Text(
                 text = stringResource(R.string.terms_checkbox_link),
                 style = MaterialTheme.typography.bodySmall,
-                color = Color(0xFF6A1B9A),
+                color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.clickable { onClickTerms() }
             )
         }

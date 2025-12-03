@@ -19,18 +19,31 @@ import com.metatreasures.metatreasures.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TermsSheet(show: Boolean, onDismiss: () -> Unit, sheetState: SheetState) {
+fun TermsSheet(
+    show: Boolean,
+    onDismiss: () -> Unit,
+    sheetState: SheetState
+) {
     if (show) {
         ModalBottomSheet(
             onDismissRequest = onDismiss,
             sheetState = sheetState,
-            shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp)
+            shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),
+            containerColor = MaterialTheme.colorScheme.surface,
+            tonalElevation = 8.dp
         ) {
             Column(
-                modifier = Modifier.fillMaxWidth().fillMaxHeight(0.5f).padding(24.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(0.5f)
+                    .padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Text(text = stringResource(R.string.terms_sheet_text), style = MaterialTheme.typography.titleMedium)
+                Text(
+                    text = stringResource(R.string.terms_sheet_text),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
             }
         }
     }

@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android") version "2.0.0"
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
     id("com.google.gms.google-services")
+    id("org.jetbrains.kotlin.kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -66,6 +68,14 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.0")
     implementation("io.coil-kt:coil-compose:2.6.0")
     implementation("io.coil-kt:coil-gif:2.6.0")
+// Hilt
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    implementation("androidx.compose.foundation:foundation:1.9.5")
+    implementation("androidx.compose.runtime:runtime:1.9.5")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+
+// Hilt для Jetpack Compose Navigation
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
 
     // Firebase

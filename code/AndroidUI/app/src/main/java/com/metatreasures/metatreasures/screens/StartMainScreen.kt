@@ -11,6 +11,7 @@ import androidx.compose.animation.scaleOut
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,31 +22,36 @@ import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.metatreasures.metatreasures.R
+import com.metatreasures.metatreasures.datastore.Prefs
 import com.metatreasures.metatreasures.navigation.Navigation
-import com.metatreasures.metatreasures.ui.theme.AppTheme
+import com.metatreasures.metatreasures.viewmodel.AuthViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @Composable
-fun StartMainScreen(navController: NavController, darkTheme: Boolean) {
+fun StartMainScreen(navController: NavController, viewModel: AuthViewModel) {
     var isVisible by remember { mutableStateOf(true) }
-    val coroutineScope = rememberCoroutineScope()
-
-    val backgroundColor = if (darkTheme) {
-        AppTheme.colors.backgroundTextFieldColor
-    } else {
-        AppTheme.colors.backgroundFormColor
-    }
+    val context = LocalContext.current
+    val isLoggedIn by viewModel.isLoggedIn.collectAsState()
 
     LaunchedEffect(Unit) {
-        coroutineScope.launch {
-            delay(2000)
-            isVisible = false
-            delay(250)
+        delay(2000)
+        isVisible = false
+        delay(250)
+        if (isLoggedIn) {
+            navController.navigate(Navigation.MainNavigationScreen.route) {
+                popUpTo(Navigation.StartMainScreen.route) { inclusive = true }
+            }
+        } else if (Prefs.isExperienceShown(context)) {
+            navController.navigate(Navigation.LoadingScreen.route) {
+                popUpTo(Navigation.StartMainScreen.route) { inclusive = true }
+            }
+        } else {
             navController.navigate(Navigation.CryptoExperienceScreen.route) {
                 popUpTo(Navigation.StartMainScreen.route) { inclusive = true }
             }
         }
+
     }
 
     AnimatedVisibility(
@@ -62,7 +68,7 @@ fun StartMainScreen(navController: NavController, darkTheme: Boolean) {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(color = backgroundColor),
+                .background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center
         ) {
             AsyncImage(
@@ -70,16 +76,9 @@ fun StartMainScreen(navController: NavController, darkTheme: Boolean) {
                     .data(R.drawable.my_logo)
                     .build(),
                 contentDescription = null,
-                modifier = Modifier.size(320.dp)
+                modifier = Modifier.size(240.dp)
             )
         }
     }
 }
 
-@Composable
-fun PreviewSplash() {
-    AppTheme {
-        val navController = rememberNavController()
-        StartMainScreen(navController, darkTheme = true)
-    }
-}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="greeting_padding_vertical">8dp</dimen>
+    <dimen name="button_width">180dp</dimen>
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="screen_padding">12dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="header_corner_radius">8dp</dimen>
+    <dimen name="header_padding">8dp</dimen>
+    <dimen name="token_card_corner_radius">12dp</dimen>
+    <dimen name="token_card_elevation">2dp</dimen>
+    <dimen name="token_card_padding">12dp</dimen>
+    <dimen name="token_icon_size">32dp</dimen>
+</resources>

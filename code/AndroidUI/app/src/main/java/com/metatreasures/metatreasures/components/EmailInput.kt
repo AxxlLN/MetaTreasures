@@ -17,12 +17,15 @@ import androidx.compose.ui.unit.dp
 import com.metatreasures.metatreasures.R
 
 @Composable
-fun EmailInput(input: String, onValueChange: (String) -> Unit) {
+fun EmailInput(
+    input: String,
+    onValueChange: (String) -> Unit
+) {
     Column {
         Text(
             text = stringResource(R.string.email_input_label),
             style = MaterialTheme.typography.bodyMedium,
-            color = Color.Gray,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
             modifier = Modifier.padding(bottom = 8.dp)
         )
         OutlinedTextField(
@@ -34,17 +37,23 @@ fun EmailInput(input: String, onValueChange: (String) -> Unit) {
                 .height(60.dp),
             shape = RoundedCornerShape(12.dp),
             colors = TextFieldDefaults.colors(
-                focusedContainerColor = Color(0xFFEEEEEE),
-                unfocusedContainerColor = Color(0xFFEEEEEE),
-                focusedTextColor = Color(0xFFEEEEEE),
-                unfocusedTextColor = Color(0xFFEEEEEE),
-                cursorColor = Color.White,
-                focusedIndicatorColor = Color.Transparent,
-                unfocusedIndicatorColor = Color.Transparent,
-                focusedPlaceholderColor = Color.DarkGray,
-                unfocusedPlaceholderColor = Color.DarkGray
+                focusedContainerColor = MaterialTheme.colorScheme.surface,
+                unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+                focusedTextColor = MaterialTheme.colorScheme.onSurface,
+                unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
+                cursorColor = MaterialTheme.colorScheme.primary,
+                focusedIndicatorColor = MaterialTheme.colorScheme.onSurface,
+                unfocusedIndicatorColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+
+                focusedPlaceholderColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f),
+                unfocusedPlaceholderColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
             ),
-            placeholder = { Text(text = stringResource(R.string.email_input_label)) }
+            placeholder = {
+                Text(
+                    text = stringResource(R.string.email_input_placeholder),
+                    style = MaterialTheme.typography.bodyMedium
+                )
+            }
         )
     }
 }

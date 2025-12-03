@@ -17,4 +17,23 @@
     <string name="terms_sheet_text">Приложение является курсовым проектом</string>
     <string name="welcome_header_line1">Добро пожаловать в</string>
     <string name="welcome_header_line2">Calibri!</string>
+    <string name="close_button_description">Закрыть</string>
+    <string name="app_logo_description">Логотип приложения</string>
+    <string name="loading_animation_description">Анимация загрузки</string>
+    <string name="settings_title">Настройки</string>
+    <string name="theme_choice">Выбор темы</string>
+    <string name="theme_system">Системная</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="search_tokens">Поиск токенов</string>
+    <string name="explore_assets">Исследуй мир цифровых активов!</string>
+    <string name="register_login">Регистрация/Логин</string>
+    <string name="column_name">Название</string>
+    <string name="column_price">Цена</string>
+    <string name="column_change">Изм. 24ч</string>
+    <string name="expand">Подробнее</string>
+    <string name="collapse">Свернуть</string>
+    <string name="crypto_info_route">crypto_info/%1$s</string>
+    <string name="exchange_label">Биржа</string>
+    <string name="wallet_label">Кошелёк</string>
 </resources>

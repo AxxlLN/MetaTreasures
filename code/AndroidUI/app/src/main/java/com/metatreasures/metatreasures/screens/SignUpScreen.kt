@@ -23,13 +23,14 @@ import com.metatreasures.metatreasures.components.GoogleButton
 import com.metatreasures.metatreasures.navigation.Navigation
 import com.metatreasures.metatreasures.viewmodel.AuthViewModel
 import kotlinx.coroutines.delay
+import androidx.hilt.navigation.compose.hiltViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignUpScreen(
     navController: NavController,
     onGoogleSignIn: () -> Unit,
-    viewModel: AuthViewModel
+    viewModel: AuthViewModel = hiltViewModel()
 ) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -108,7 +109,6 @@ fun SignUpScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // 🔹 Кнопка Google
             GoogleButton { onGoogleSignIn() }
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -123,7 +123,6 @@ fun SignUpScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // 🔄 Анимация загрузки
             AnimatedVisibility(
                 visible = state.loading,
                 enter = fadeIn(animationSpec = tween(500, easing = FastOutSlowInEasing)) +
@@ -134,7 +133,6 @@ fun SignUpScreen(
                 CircularProgressIndicator()
             }
 
-            // ⚠️ Ошибка
             (state.error ?: localError)?.let { msg ->
                 Text(
                     text = msg,
@@ -145,7 +143,6 @@ fun SignUpScreen(
         }
     }
 
-    // ✅ Успешная регистрация → переход на главный экран
     LaunchedEffect(state.success) {
         if (state.success) {
             delay(500)

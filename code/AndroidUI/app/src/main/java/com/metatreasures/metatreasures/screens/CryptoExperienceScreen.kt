@@ -38,12 +38,15 @@ import kotlinx.coroutines.launch
 @Composable
 fun CryptoExperienceScreen(navController: NavController) {
     var isVisible by remember { mutableStateOf(true) }
-    val coroutineScope = rememberCoroutineScope()
+
+    fun navigateToLoading() {
+        isVisible = false
+    }
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background.copy(alpha = 0.95f))
+            .background(MaterialTheme.colorScheme.surface)
     ) {
         GradientBackground()
 
@@ -66,21 +69,15 @@ fun CryptoExperienceScreen(navController: NavController) {
 
                 BottomSection(
                     onNoviceClick = {
-                        coroutineScope.launch {
-                            isVisible = false
-                            delay(300)
-                            navController.navigate(Navigation.LoadingScreen.route) {
-                                popUpTo(Navigation.CryptoExperienceScreen.route) { inclusive = true }
-                            }
+                        isVisible = false
+                        navController.navigate(Navigation.LoadingScreen.route) {
+                            popUpTo(Navigation.CryptoExperienceScreen.route) { inclusive = true }
                         }
                     },
                     onExperiencedClick = {
-                        coroutineScope.launch {
-                            isVisible = false
-                            delay(300)
-                            navController.navigate(Navigation.LoadingScreen.route) {
-                                popUpTo(Navigation.CryptoExperienceScreen.route) { inclusive = true }
-                            }
+                        isVisible = false
+                        navController.navigate(Navigation.LoadingScreen.route) {
+                            popUpTo(Navigation.CryptoExperienceScreen.route) { inclusive = true }
                         }
                     }
                 )
@@ -88,5 +85,4 @@ fun CryptoExperienceScreen(navController: NavController) {
         }
     }
 }
-
 

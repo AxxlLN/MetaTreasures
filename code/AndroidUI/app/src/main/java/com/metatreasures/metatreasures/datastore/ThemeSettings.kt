@@ -1,4 +1,4 @@
-package com.metatreasures.metatreasures.viewmodel
+package com.metatreasures.metatreasures.datastore
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit
